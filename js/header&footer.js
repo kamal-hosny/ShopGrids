@@ -118,32 +118,13 @@ generateFooter = () =>{
     </div>
   </div>
   
-  <!-- start load screen -->
-  <div class="loader"></div>
-  <!-- end load screen -->
+
 
 
     `
 }
 
 generateFooter()
-
-/* Start load screen */
-window.addEventListener("load", () => {
-  let loader =document.querySelector(".loader");
-  loader.classList.add("loader--hidden");
-
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-
-
-
-
-
-
-
 
 
 
@@ -189,8 +170,8 @@ generateHeader = () =>{
                 <div class="top">
                   <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
@@ -201,8 +182,8 @@ generateHeader = () =>{
                   </div>
                   <div class="login">
                     <ul>
-                      <li><a href="#">Sign in</a></li>
-                      <li><a href="#">Register</a></li>
+                      <li><a href="login.html">Sign in</a></li>
+                      <li><a href="register.html">Register</a></li>
                     </ul>
                   </div>
                 </div>
@@ -220,7 +201,7 @@ generateHeader = () =>{
             <nav class="navbar">
               <div class="container">
                 <a class="navbar-brand" href="#">
-                  <img src="images/logo.svg" alt="Bootstrap" width="30" height="24">
+                <a href="index.html"><img src="images/logo.svg" alt="Bootstrap" width="30" height="24"></a>
                 </a>
                 <nav class="navbar d-none d-md-flex">
                   <div class="container-fluid">
@@ -531,6 +512,24 @@ let themeButtons = document.querySelectorAll('.theme-buttons');
 
 
 
+// up
+let span =document.querySelector('.up')
+window.onscroll =() =>{
+    // console.log(this.scrollY)
+    if(this.scrollY >= 1000){
+        span.classList.add('show')
+    }else{
+        span.classList.remove('show')
+    }
+}
+span.addEventListener('click',function(){
+  scroll({
+      top: 0,
+      behavior: "smooth"
+}) 
+  })
+
+// end up
 
 
 

@@ -319,39 +319,6 @@ color: var(--main-color-alt);
 }
 /* up */
 /* End footer */
-
-/* Start load screen */
-.loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    z-index: 999999;
-}
-.loader--hidden{
-    display: none;
-}
-
-.loader::after{
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 10px solid #0167f3;
-    border-top-color: #fff ;
-    border-radius: 50%;
-    animation: loading 1s ease infinite;
-}
-@keyframes loading {
-    from {transform: rotate(0turn)}
-    to {transform: rotate(1turn)}
-}
-/* End load screen */
-
 /* Start  Header */
 .header {
     position: relative;
@@ -955,6 +922,7 @@ color: var(--main-color-alt);
     transform: translateY(10px);
 }
 
+/** 
 /** 
 * ! menu-icon-ul-c-1
 **/
