@@ -16,41 +16,10 @@ span.addEventListener('click',function(){
   })
 
 // end up
-// Start menu-icon
-let menuIcon =document.getElementById("menu-icon")
-let Icon1 =document.getElementById("menu-icon1")
-let Icon2 =document.getElementById("menu-icon2")
-let Icon3 =document.getElementById("menu-icon3")
-let menuIconUL= document.getElementById("menu-icon-ul")
 
-menuIcon.addEventListener('click',function(){
-  Icon1.classList.toggle('Icon1');
-  Icon2.classList.toggle('Icon2');
-  Icon3.classList.toggle('Icon3');
-  menuIconUL.classList.toggle('menu-icon-ul');
-});
 
 
 // End menu-icon
-// Start dark mod
-
-let DarkMod = document.getElementById("dark-mod")
-
-console.log(DarkMod)
-
-function os(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-circle-half-stroke"></i>' ;
-}
-function light(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-sun"></i>' ;
-}
-function dark(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-moon"></i>' ;
-}
-function custom(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-gear"></i>' ;
-}
-// End dark mod
 // Start colors
   let root = document.querySelector(':root');
   let rootStyles =getComputedStyle(root);
@@ -86,3 +55,4 @@ function chnageToSourcefive() {
 }
 
 // End img
+
