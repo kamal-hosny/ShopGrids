@@ -124,7 +124,7 @@ let cardItemsData =[{
 
 
 let total = document.getElementById('total');
-let shoppingCart = document.getElementById('shopping-card');
+let shoppingCart = document.getElementById('shopping-cart');
 console.log(shoppingCart)
 
 let basket = JSON.parse(localStorage.getItem("data")) || [] ;
