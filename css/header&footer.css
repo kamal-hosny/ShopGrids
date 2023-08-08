@@ -330,7 +330,7 @@ color: var(--main-color-alt);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2d3a48;
+    background-color: #fff;
     z-index: 999999;
 }
 .loader--hidden{
@@ -341,8 +341,8 @@ color: var(--main-color-alt);
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #ddd;
-    border-top-color: #0167f3 ;
+    border: 10px solid #0167f3;
+    border-top-color: #fff ;
     border-radius: 50%;
     animation: loading 1s ease infinite;
 }

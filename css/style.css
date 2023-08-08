@@ -797,7 +797,7 @@ ul {
     background: var(--bg-color);
 }
 .landing .big-box{
-    background-image: url(/images/2.webp);
+    background-image: url(../images/2.webp);
     background-size: cover;
     padding: 20px;
     height: 500px;
@@ -810,7 +810,7 @@ ul {
     padding: 0 40px;
 }
 .landing .big-box2{
-    background-image: url(/images/3.webp);
+    background-image: url(../images/3.webp);
 }
 .landing .big-box h6{
     font-size: 16px;
