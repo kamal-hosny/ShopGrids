@@ -871,7 +871,7 @@ ul {
     }
 }
 .landing .small-box .box1{
-    background-image: url(/images/1.webp);
+    background-image: url(../images/1.webp);
     height: 240px;
     background-size: cover;
     background-position: center;
@@ -1155,12 +1155,12 @@ ul {
     background-color: var(--color-text);
 }
 .banner .banner-1{
-    background-image: url('/images/banner1.webp');
+    background-image: url('../images/banner1.webp');
     background-size: cover;
     background-position: right;
 }
 .banner .banner-2{
-    background-image: url('/images/banner2.webp');
+    background-image: url('../images/banner2.webp');
     background-size: cover;
     background-position: right;
 }
