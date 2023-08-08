@@ -1,0 +1,172 @@
+/* Start Variables */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color-green: green ;
+    --main-color:#2196F3 ;
+    --main-color-alt:#0167f3 ;
+    --main-transition:0.3s;
+    --section-backgroung: #ececec;
+    --color-gray: #888;
+    --color2-gray: #e5e5e5;
+    --color3-gray: #eee;
+    --color4-gray: #dee2e6;
+    --color5-gray: #8a8a8a;
+    --color6-gray: #ccc;
+    --color7-gray: #ffffff62;
+    --color-text: #081828;
+    --bg-color: #fff ;
+    --bg2-color: #f9f9f9 ;
+    --random-color: #2d3a48 ;
+}
+
+/* dark */
+:root{
+}
+
+
+
+
+
+
+/* Start Swiper */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+    color: red !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: red;
+} */
+/* End Swiper */
+/* Start main-title */
+.main-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (max-width:576px){
+    .main-title{
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+.main-title h2{
+    text-align: center;
+    position: relative;
+    margin: 30px;
+}
+.main-title h2::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    background-color: var(--main-color-alt);
+    height: 3px;
+    width: 10%;
+}
+.main-title p{
+    position: relative;
+    font-size: 13px;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: var(--color5-gray);
+}
+/* End main-title */
+/* End Variables */
+/* Start Global Rules */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color) ;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.active{
+    color:var(--main-color-alt) !important;
+}
+
+
+
+
+/* Start 404 */
+body{
+    background-image: url(/images/404-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.maill-success {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.maill-success .success-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.maill-success .success-content h1{
+    font-size: 100px;
+    color: #0167f3;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.maill-success .success-content h2{
+    font-size: 30px;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+.maill-success .success-content p{
+    font-weight: 400;
+    color: var(--color-gray);
+    margin-bottom: 50px;
+}
+.maill-success .success-content .button a{
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 500px;
+    background-color: var(--main-color-alt);
+    transition: var(--main-transition);
+    color: var(--bg-color);
+}
+.maill-success .success-content .button a:hover{
+    background-color: var(--color-text);
+}
+/* End 404 */

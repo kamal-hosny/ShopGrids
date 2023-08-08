@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <!-- Render All Elements Normally -->
+    <link rel="Stylesheet" href="css/normalizw.css">
+    <!-- Font Awesome Library -->
+    <link rel="Stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- icon -->
+    <link rel="icon" href="images/icon-web.png">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+    <body>
+      <!-- Start Header -->
+      <div class="header">
+        <div class="topbar"></div>
+
+        <div class="header-middle">
+          <nav class="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/images/logo.svg" alt="Bootstrap" width="30" height="24">
+              </a>
+              <nav class="navbar d-none d-md-flex">
+                <div class="container-fluid">
+                  <form class="d-flex " role="search">
+                    <select  id="select1" class="select1 rounded-start">
+                      <option selected>All</option>
+                      <option value="1">option 01</option>
+                      <option value="2">option 02</option>
+                      <option value="3">option 03</option>
+                      <option value="4">option 04</option>
+                      <option value="5">option 05</option>
+                    </select>
+                    <input class=" search1 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary search search-icon" type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+                  </form>
+                </div>
+              </nav>
+              <div class="hotline d-none d-lg-flex">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info">
+                  <p class="p1">Hotline:<p>
+                  <p class="p2">(+100) 123 456 7890</p>
+                </div>
+              </div>
+
+              <div class="icons">
+                      <!-- Start dark mod -->
+                      <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="dark-mod"><i class=" fa-solid fa-circle-half-stroke"></i></span>
+                        </button>
+                        <ul class="dropdown-menu ul-dark">
+                          <li><a class="dropdown-item" href="#" onclick="os()"> <span><i class="fa-solid fa-circle-half-stroke"></i></span> OS Default</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="light()"> <span><i class="fa-solid fa-sun"></i></span> Light</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="dark()"> <span><i class="fa-solid fa-moon"></i></span> Dark</a></li>
+                          <li class="dark-custom"><a class="dropdown-item" href="#" onclick="custom()"> <span><i class="fa-solid fa-gear"></i></span> Custom</a>
+                          <ul class="ul-dark-custom">
+                            <li class="theme-buttons" main-data-color="#2196F3" data-color-alt=" #0167f3" style="background: #0167f3;"><span></span></li>
+                            <li class="theme-buttons" main-data-color="#20958a" data-color-alt=" #009688" style="background: #009688;"><span></span></li>
+                            <li class="theme-buttons" main-data-color="#ec6291" data-color-alt=" #e91e63" style="background: #e91e63;"><span></span></li>
+                            <li class="theme-buttons" main-data-color="#ff764d" data-color-alt=" #ff5722" style="background: #ff5722;"><span></span></li>
+                            <li class="theme-buttons" main-data-color="#8665c0" data-color-alt=" #673ab7" style="background: #673ab7;"><span></span></li>
+                            <li class="theme-buttons" main-data-color="#7a6861" data-color-alt=" #795548" style="background: #795548;"><span></span></li>
+                            
+                          </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- End dark mod -->
+                <div class="icon0 d-md-none">
+                  <i class="fa-solid fa-magnifying-glass "></i>
+                </div>
+                <div class="icon1">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="icon2">
+                  <span id="cartAmount" class="icon2-span">2</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div class="min-cart container">
+                    <div class="header-cart">
+                      <p class="p1">2 Items</p>
+                      <a href="#"><p class="p2">View Card</p></a>
+                    </div>
+                    <span class="line"></span>
+                    <!-- 1 -->
+                    <div class="canter-cart">
+                      <div class="image">
+                        <img src="images/watch.webp" alt="">
+                      </div>
+                      <div class="info">
+                        <h4>Apple Watch</h4>
+                        <h5>Series 6</h5>
+                        <p>1x-$99.00</p>
+                      </div>
+                      <div class="error">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <span class="line1"></span>
+                    <!-- 2 -->
+                    <div class="canter-cart">
+                      <div class="image">
+                        <img src="images/camera.webp" alt="">
+                      </div>
+                      <div class="info">
+                        <h4>Wi-Fi Smart</h4>
+                        <h5>Camera</h5>
+                        <p>1x-$35.00</p>
+                      </div>
+                      <div class="error">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <span class="line2"></span>
+
+                    <div class="footer-cart">
+                      <p class="p1">Total</p>
+                      <p class="p2">$134.00</p>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Check out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="header2">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="col-lg-8 col-md-6 col-6 d-flex .flex-row">
+              <div class="nav0 my-4">
+                <div class="nav-contant1">
+                  <div class="dropdown d-none d-lg-block categorie">
+                    <button class="btn  dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class='bx bx-menu '></i> All Categories
+                    </button>
+                    <span class="line d-none d-lg-block"></span>
+                    <ul class="dropdown-menu">
+                      <li class="li-ele" ><a class="dropdown-item" href="#">Electronics <i class="fa-solid fa-arrow-right"></i></a>
+                      <ul class="ul-ele">
+                        <li><a href="#">Digital Cameras</a></li>
+                        <li><a href="#">Camcorders</a></li>
+                        <li><a href="#">Camera Drones</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">MP3 Players</a></li>
+                        <li><a href="#">Microphones</a></li>
+                        <li><a href="#">Chargrs</a></li>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">Cables & Adapters</a></li>
+                      </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Televisions</a></li>
+                      <li><a class="dropdown-item" href="#">Best Selling</a></li>
+                      <li><a class="dropdown-item" href="#">Top 100 Offer</a></li>
+                      <li><a class="dropdown-item" href="#">Sunglass</a></li>
+                      <li><a class="dropdown-item" href="#">Watch</a></li>
+                      <li><a class="dropdown-item" href="#">men's project</a></li>
+                      <li><a class="dropdown-item" href="#">Home Audio & Theater</a></li>
+                      <li><a class="dropdown-item" href="#">Computers & Tables</a></li>
+                      <li><a class="dropdown-item" href="#">Video Games</a></li>
+                      <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="nav1 my-4 ">
+                <div class="container d-none d-lg-block">
+                  <ul class="nav1-ul">
+                    <li><a href="#" class="active">Home</a></li>
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="FAQ.html">Faq</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li><a class="dropdown-item" href="mail-success.html">Mail Success</a></li>
+                        <li><a class="dropdown-item" href="404-page.html">404 Error</a></li>
+                      </ul>
+                    </div></li>
+
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="shop-grid.html">Shop</a></li>
+                        <li><a class="dropdown-item" href="#">Shop List</a></li>
+                        <li><a class="dropdown-item" href="single-product.html">Shop Single</a></li>
+                        <li><a class="dropdown-item" href="Cart.html">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">Checkout</a></li>
+                      </ul>
+                    </div></li>
+
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="blog.html">Blog Grid Sidebar</a></li>
+                        <li><a class="dropdown-item" href="blog.html">Blog Single</a></li>
+                        <li><a class="dropdown-item" href="blog.html">Blog Single Sibebar</a></li>
+                      </ul>
+                    </div></li>
+
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
+              <div class="nav2 my-4">
+                <div class="container d-lg-none">
+                  <div class="links">
+                    <div class="menu-icon" id="menu-icon">
+                      <span id="menu-icon1"></span>
+                      <span id="menu-icon2"></span>
+                      <span id="menu-icon3"></span>
+                    </div>
+                    <ul id="menu-icon-ul">
+                      <li><a href="#"><span class="active">Home</span></a></li>
+                      <li><a href="#"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Shop</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Blog</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Contact</span></a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <div class="nav-sol justify-content-end ">
+                <p class="d-none d-lg-block">Follow Us:</p>
+                <ul>
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Landing -->
+      <div class="landing m-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+
+              <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+              centered-slides="true" autoplay-delay="3000" autoplay-disable-on-interaction="false">
+              <swiper-slide> 
+                <div class="big-box">
+                <h6>No restocking fee ($35 savings)</h6>
+                <h1>M75 Sport Watch</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                <p class="price">
+                  Now Only: <span>$590.00</span>
+                </p>
+                <button type="button" class="btn swiper-btn">Shop Now</button>
+              </div>
+            </swiper-slide>
+              <swiper-slide>
+                <div class="big-box big-box2">
+                  <h6>Big Sale Offer</h6>
+                  <h1>Get the Best Deal on CCTV Camera</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                  <p class="price">
+                    Combo Only: <span>$320.00</span>
+                  </p>
+                  <button type="button" class="btn swiper-btn">Shop Now</button>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+            </div>
+            <div class="col-lg-4 p-0">
+            <div class="small-box ">
+              <div class="box1 ">
+                <h6>New line required</h6>
+                <h3>iPhone 12 Pro Max</h3>
+                <p>$259.99</p>
+              </div>
+              <div class="box2 ">
+                <h3>Weekly Sale!</h3>
+                <p>Saving up to 50% off all online store items this week.</p>
+                <button type="button" class="btn swiper-btn">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- End Landing -->
+      <!-- Start categories -->
+    <div class="categories">
+      <div class="container">
+        <div class="main-title">
+          <h2>Featured Categories</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="row boxs">
+          <!-- 1 -->
+          <div class="col-lg-4 col-md-6 box">
+            <div class="info">
+              <p>TV & Audios</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-1.webp" alt="">
+            </div>
+          </div>
+          <!-- End 1 -->
+          <!-- 2 -->
+          <div class="col-lg-4 col-md-6 box">
+            <div class="info">
+              <p>Desktop & Laptop</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-2.webp" alt="">
+            </div>
+          </div>
+          <!-- End 2 -->
+          <!-- 3 -->
+          <div class="col-lg-4 col-md-6 box">
+            <div class="info">
+              <p>Cctv Camera</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-3.webp" alt="">
+            </div>
+          </div>
+          <!-- End 3 -->
+          <!-- 4 -->
+          <div class="col-lg-4 box col-md-6">
+            <div class="info">
+              <p>Dslr Camera</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-4.webp" alt="">
+            </div>
+          </div>
+          <!-- End 4 -->
+          <!-- 5 -->
+          <div class="col-lg-4 box col-md-6">
+            <div class="info">
+              <p>Smart Phones</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-5.webp" alt="">
+            </div>
+          </div>
+          <!-- End 5 -->
+          <!-- 6 -->
+          <div class="col-lg-4 box col-md-6">
+            <div class="info">
+              <p>Game Console</p>
+              <ul>
+                <li><a href="#">Television</a></li>
+                <li><a href="#">QLED TV</a></li>
+                <li><a href="#">Audios</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">View All</a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/Featured-6.webp" alt="">
+            </div>
+          </div>
+          <!-- End 6 -->
+        </div>
+      </div>
+    </div>
+    <!-- End categories -->
+    <!-- Start Product -->
+    <div class="trending-product">
+      <div class="container">
+        <div class="main-title" >
+          <h2>Trending Product</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="row" id="cards">
+          <!-- 1 -->
+        
+          <!-- 1 -->
+        </div>
+      </div>
+    </div>
+    <!-- End Product -->
+    <!-- Start banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 banner-1">
+            <h3>Smart Watch 2.0</h3>
+            <p>Space Gray Aluminum Case with
+              Black/Volt Real Sport Band</p>
+            <button>View Details</button>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12 banner-2">
+            <h3>Smart Headphone</h3>
+            <p>Lorem ipsum dolor sit amet,
+              eiusmod tempor incididunt ut labore.</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End banner -->
+    <!-- Start special -->
+    <div class="special">
+      <div class="container">
+        <div class="main-title">
+          <h2>Special Offer</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="row ">
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="row">
+                            <!-- 1 -->
+              <div class="col-lg-4 col-md-4 col-12 ">
+            <div class="product">
+              <div class="image">
+                <img src='images/Product3.webp' alt="">
+                <button><i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart</span></button>
+              </div>
+              <div class="info">
+                <h5>Camera</h5>
+                <h4>WiFi Security Camera</h4>
+                <div class="stars-gru">
+                  <ul class="stars">
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>5.0 Review(s)</p>
+                </div>
+                <h3>$399.00</h3>
+              </div>
+            </div>
+              </div>
+                          <!-- 1 -->
+                            <!-- 2 -->
+              <div class="col-lg-4 col-md-4 col-12 ">
+            <div class="product">
+              <div class="image">
+                <img src='images/Product8.webp' alt="">
+                <button><i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart</span></button>
+              </div>
+              <div class="info">
+                <h5>Laptop</h5>
+                <h4>Apple MacBook Air
+                </h4>
+                <div class="stars-gru">
+                  <ul class="stars">
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>5.0 Review(s)</p>
+                </div>
+                <h3>$899.00</h3>
+              </div>
+            </div>
+              </div>
+                          <!-- 2 -->
+                            <!-- 3 -->
+              <div class="col-lg-4 col-md-4 col-12 ">
+            <div class="product">
+              <div class="image">
+                <img src='images/Product5.webp' alt="">
+                <button><i class="fa-solid fa-cart-shopping"></i> <span> Add To Cart</span></button>
+              </div>
+              <div class="info">
+                <h5>Headphones</h5>
+                <h4>Wireless Headphones</h4>
+                <div class="stars-gru">
+                  <ul class="stars">
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bx-star'></i></li>
+                  </ul>
+                  <p>5.0 Review(s)</p>
+                </div>
+                <h3>$350.00</h3>
+              </div>
+            </div>
+              </div>
+                          <!-- 3 -->
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card-only">
+                  <h4>Samsung Notebook 9</h4>
+                  <p>Lorem ipsum dolor sit amet,
+                    eiusmod tempor incididunt ut labore.</p>
+                  <h3>$590.00</h3>
+                  <button>Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="big-card">
+              <div class="image">
+                <img src="images/Offer1.webp" alt="">
+              </div>
+              <div class="info">
+                <h4>Apple MacBook Air
+                </h4>
+                <div class="stars-gru">
+                  <ul class="stars">
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  <li><i class='bx bxs-star'></i></li>
+                  </ul>
+                  <p>5.0 Review(s)</p>
+                </div>
+                <h3><span>$200.00</span><del>$400.00</del></h3>
+                <div class="description">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry incididunt ut eiusmod tempor labores.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End special -->
+    <!-- Start min-project -->
+    <div class="min-project">
+      <div class="container">
+          <div class="row">
+            <!-- 1 -->
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="project-list">
+                <div class="header-list">
+                  <h5>Best Sellers</h5>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/1min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">GoPro Hero4 Silver</a></h4>
+                    <h5>$287.99</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/2min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Puro Sound Labs BT2200</a></h4>
+                    <h5>$95.00</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/3min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">HP OfficeJet Pro 8710</a></h4>
+                    <h5>$120.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end 1 -->
+            <!-- 2 -->
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="project-list">
+                <div class="header-list">
+                  <h5>New Arrivals</h5>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/4min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">iPhone X 256 GB Space Gray</a></h4>
+                    <h5>$1150.00</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/5min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Canon EOS M50 Mirrorless Camera</a></h4>
+                    <h5>$950.00</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/6min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Microsoft Xbox One S</a></h4>
+                    <h5>$298.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end 2 -->
+            <!-- 3 -->
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="project-list">
+                <div class="header-list">
+                  <h5>Top Rated</h5>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/7min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Samsung Gear 360 VR Camera</a></h4>
+                    <h5>$68.00</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/8min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Samsung Galaxy S9+ 64 GB</a></h4>
+                    <h5>$840.00</h5>
+                  </div>
+                </div>
+                <div class="mine-list">
+                  <div class="image">
+                    <img src="images/9min-project.webp" alt="">
+                  </div>
+                  <div class="info">
+                    <h4><a href="#">Zeus Bluetooth Headphones</a></h4>
+                    <h5>$28.00</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end 3 -->
+          </div>
+        </div>
+      </div>
+    <!-- End min-project -->
+    <!-- Start Brands -->
+    <div class="brands">
+      <div class="container">
+        <p>Popular Brands</p>
+        <div class="brand-cont">
+          <div class="row">
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 1.webp" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 2.webp" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 3.webp" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 4.webp" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 5.webp" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6  p-0">
+              <div class="image">
+                <img src="images/Brands 6.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Brands -->
+    <!-- Start News -->
+    <div class="news">
+      <div class="container">
+        <div class="main-title">
+          <h2>Our Latest News</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="row cards">
+          <!-- 1 -->
+          <div class="col-lg-4 col-md-6 col-12 Card">
+            <div class="image"><img src="images/News1.webp" alt=""></div>
+            <div class="blog-content">
+              <h4>Gaming</h4>
+              <h3><a href="#">Interesting fact about gaming consoles</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <!-- 1 -->
+          <!-- 2 -->
+          <div class="col-lg-4 col-md-6 col-12 Card">
+            <div class="image"><img src="images/News2.webp" alt=""></div>
+            <div class="blog-content">
+              <h4>eCommerce</h4>
+              <h3><a href="#">What information is needed for shipping?</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <!-- 3 -->
+          <div class="col-lg-4 col-md-6 col-12 Card">
+            <div class="image"><img src="images/News3.webp" alt=""></div>
+            <div class="blog-content">
+              <h4>Electronic</h4>
+              <h3><a href="#">Electronics, instrumentation & control engineering</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <!-- 3 -->
+        </div>
+      </div>
+    </div>
+    <!-- End News -->
+    <!-- Start shipping info -->
+    <div class="shipping-info">
+      <div class="container">
+        <ul>
+          <li class="w-lg-25 w-md-50 w-xs-100 ">
+            <div class="icon"><i class="fa-solid fa-van-shuttle"></i></div>
+            <h5>Free Shipping</h4>
+            <p>On order over $99</p>
+          </li>
+          <li class="w-lg-25 w-md-50 w-xs-100 ">
+            <div class="icon"><i class="fa-solid fa-comment"></i></div>
+            <h5>24/7 Support.</h4>
+            <p>Live Chat Or Call.</p>
+          </li>
+          <li class="w-lg-25 w-md-50 w-xs-100 ">
+            <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+            <h5>Online Payment.</h4>
+            <p>Secure Payment Services.</p>
+          </li>
+          <li class="w-lg-25 w-md-50 w-xs-100 ">
+            <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <h5>Easy Return.</h4>
+            <p>Hassle Free Shopping.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End shipping info -->
+
+
+
+    <!-- Start footer -->
+    <div id="footer"></div>
+    <!-- up -->
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+    <!-- up -->
+    <!-- End footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.xyz/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      <!-- bootstrap JS -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- JS File -->
+      <script src="js/main.js"></script>
+      <script src="js/data.js"></script>
+      <script src="js/header&footer.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="Stylesheet" href="css/FAQ.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <!-- Render All Elements Normally -->
+    <link rel="Stylesheet" href="css/normalizw.css">
+    <!-- Font Awesome Library -->
+    <link rel="Stylesheet" href="css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- icon -->
+    <link rel="icon" href="images/icon-web.png">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+    <body>
+      <!-- Start Header -->
+      <div class="header">
+        <div class="topbar">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="top-left">
+                  <ul>
+                    <li class="usd"> 
+                      <select id="select-usd">
+                        <option value="0">$ USD</option>
+                        <option value="1">€ EURO</option>
+                        <option value="2">$ CAD</option>
+                        <option value="3">₹ INR</option>
+                        <option value="4">¥ CNY</option>
+                        <option value="5">৳ BDT</option>
+                      </select>
+                    </li>
+                    <li class="enlish"> 
+                      <select id="select-enlish">
+                        <option value="0">English</option>
+                        <option value="1">Español</option>
+                        <option value="2">Filipino</option>
+                        <option value="3">Français</option>
+                        <option value="4">العربية</option>
+                        <option value="5">हिन्दी</option>
+                        <option value="6">বাংলা</option>
+                      </select>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12 d-md-flex d-none justify-content-center">
+                <div class="top">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-12">
+                <div class="top-end">
+                  <div class="user">
+                    <i class="fa-regular fa-user"></i> <span>Hello</span>
+                  </div>
+                  <div class="login">
+                    <ul>
+                      <li><a href="#">Sign in</a></li>
+                      <li><a href="#">Register</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-middle">
+          <nav class="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="/images/logo.svg" alt="Bootstrap" width="30" height="24">
+              </a>
+              <nav class="navbar d-none d-md-flex">
+                <div class="container-fluid">
+                  <form class="d-flex " role="search">
+                    <select  id="select1" class="select1 rounded-start">
+                      <option selected>All</option>
+                      <option value="1">option 01</option>
+                      <option value="2">option 02</option>
+                      <option value="3">option 03</option>
+                      <option value="4">option 04</option>
+                      <option value="5">option 05</option>
+                    </select>
+                    <input class=" search1 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary search search-icon" type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+                  </form>
+                </div>
+              </nav>
+              <div class="hotline d-none d-lg-flex">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info">
+                  <p class="p1">Hotline:<p>
+                  <p class="p2">(+100) 123 456 7890</p>
+                </div>
+              </div>
+
+              <div class="icons">
+                      <!-- Start dark mod -->
+                      <div class="dropdown">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span id="dark-mod"><i class=" fa-solid fa-circle-half-stroke"></i></span>
+                        </button>
+                        <ul class="dropdown-menu ul-dark">
+                          <li><a class="dropdown-item" href="#" onclick="os()"> <span><i class="fa-solid fa-circle-half-stroke"></i></span> OS Default</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="light()"> <span><i class="fa-solid fa-sun"></i></span> Light</a></li>
+                          <li><a class="dropdown-item" href="#" onclick="dark()"> <span><i class="fa-solid fa-moon"></i></span> Dark</a></li>
+                          <li class="dark-custom"><a class="dropdown-item" href="#" onclick="custom()"> <span><i class="fa-solid fa-gear"></i></span> Custom</a>
+                          <ul class="ul-dark-custom">
+                            <li><a href="#" onclick="blue()"></a></li>
+                            <li><a href="#" onclick="green()"></a></li>
+                            <li><a href="#" onclick="red()"></a></li>
+                            <li><a href="#" onclick="yellow()"></a></li>
+                            <li><a href="#" onclick="purple()"></a></li>
+                            <li><a href="#" onclick="brown()"></a></li>
+                          </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- End dark mod -->
+                <div class="icon0 d-md-none">
+                  <i class="fa-solid fa-magnifying-glass "></i>
+                </div>
+                <div class="icon1">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="icon2">
+                  <span class="icon2-span">2</span>
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <div class="min-cart container">
+                    <div class="header-cart">
+                      <p class="p1">2 Items</p>
+                      <a href="#"><p class="p2">View Card</p></a>
+                    </div>
+                    <span class="line"></span>
+                    <!-- 1 -->
+                    <div class="canter-cart">
+                      <div class="image">
+                        <img src="images/watch.webp" alt="">
+                      </div>
+                      <div class="info">
+                        <h4>Apple Watch</h4>
+                        <h5>Series 6</h5>
+                        <p>1x-$99.00</p>
+                      </div>
+                      <div class="error">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                    <!-- 1 -->
+                    <span class="line1"></span>
+                    <!-- 2 -->
+                    <div class="canter-cart">
+                      <div class="image">
+                        <img src="images/camera.webp" alt="">
+                      </div>
+                      <div class="info">
+                        <h4>Wi-Fi Smart</h4>
+                        <h5>Camera</h5>
+                        <p>1x-$35.00</p>
+                      </div>
+                      <div class="error">
+                        <i class="fa-solid fa-xmark"></i>
+                      </div>
+                    </div>
+                    <!-- 2 -->
+                    <span class="line2"></span>
+
+                    <div class="footer-cart">
+                      <p class="p1">Total</p>
+                      <p class="p2">$134.00</p>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Check out</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="header2">
+        <div class="container">
+          <div class="row align-item-center">
+            <div class="col-lg-8 col-md-6 col-6 d-flex .flex-row">
+              <div class="nav0 my-4">
+                <div class="nav-contant1">
+                  <div class="dropdown d-none d-lg-block categorie">
+                    <button class="btn  dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class='bx bx-menu '></i> All Categories
+                    </button>
+                    <span class="line d-none d-lg-block"></span>
+                    <ul class="dropdown-menu">
+                      <li class="li-ele" ><a class="dropdown-item" href="#">Electronics <i class="fa-solid fa-arrow-right"></i></a>
+                      <ul class="ul-ele">
+                        <li><a href="#">Digital Cameras</a></li>
+                        <li><a href="#">Camcorders</a></li>
+                        <li><a href="#">Camera Drones</a></li>
+                        <li><a href="#">Smart Watches</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">MP3 Players</a></li>
+                        <li><a href="#">Microphones</a></li>
+                        <li><a href="#">Chargrs</a></li>
+                        <li><a href="#">Batteries</a></li>
+                        <li><a href="#">Cables & Adapters</a></li>
+                      </ul>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Accessories</a></li>
+                      <li><a class="dropdown-item" href="#">Televisions</a></li>
+                      <li><a class="dropdown-item" href="#">Best Selling</a></li>
+                      <li><a class="dropdown-item" href="#">Top 100 Offer</a></li>
+                      <li><a class="dropdown-item" href="#">Sunglass</a></li>
+                      <li><a class="dropdown-item" href="#">Watch</a></li>
+                      <li><a class="dropdown-item" href="#">men's project</a></li>
+                      <li><a class="dropdown-item" href="#">Home Audio & Theater</a></li>
+                      <li><a class="dropdown-item" href="#">Computers & Tables</a></li>
+                      <li><a class="dropdown-item" href="#">Video Games</a></li>
+                      <li><a class="dropdown-item" href="#">Home Appliances</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="nav1 my-4 ">
+                <div class="container d-none d-lg-block">
+                  <ul class="nav1-ul">
+                    <li><a href="#" class="active">Home</a></li>
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                        <li><a class="dropdown-item" href="#">Faq</a></li>
+                        <li><a class="dropdown-item" href="#">Login</a></li>
+                        <li><a class="dropdown-item" href="#">Register</a></li>
+                        <li><a class="dropdown-item" href="#">Mail Success</a></li>
+                        <li><a class="dropdown-item" href="#">404 Error</a></li>
+                      </ul>
+                    </div></li>
+
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Shop</a></li>
+                        <li><a class="dropdown-item" href="#">Shop List</a></li>
+                        <li><a class="dropdown-item" href="#">Shop Single</a></li>
+                        <li><a class="dropdown-item" href="#">Cart</a></li>
+                        <li><a class="dropdown-item" href="#">Checkout</a></li>
+                      </ul>
+                    </div></li>
+
+
+                    <li><div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog 
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Blog Grid Sidebar</a></li>
+                        <li><a class="dropdown-item" href="single-product.html">Blog Single</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Single Sibebar</a></li>
+                      </ul>
+                    </div></li>
+
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+
+
+              <div class="nav2 my-4">
+                <div class="container d-lg-none">
+                  <div class="links">
+                    <div class="menu-icon" id="menu-icon">
+                      <span id="menu-icon1"></span>
+                      <span id="menu-icon2"></span>
+                      <span id="menu-icon3"></span>
+                    </div>
+                    <ul id="menu-icon-ul">
+                      <li><a href="#"><span class="active">Home</span></a></li>
+                      <li><a href="#"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Shop</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Blog</span><i class="fa-solid fa-chevron-down"></i></a></li>
+                      <li><a href="#"><span>Contact</span></a></li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-6">
+              <div class="nav-sol justify-content-end ">
+                <p class="d-none d-lg-block">Follow Us:</p>
+                <ul>
+                  <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href=""><i class="fa-brands fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header3">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="Start-content">
+                <h1>FAQ</h1>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <ul class="nav-content">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> <span>Home</span> </a></li>
+                <li><i class="fa-solid fa-chevron-right"></i></li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header -->
+      <!-- Start FAQ -->
+      <div class="faq">
+        <div class="container">
+          <div class="main-title">
+            <h2>Haven't Found The Answer? <br>
+              Ask Us Your Question.</h2>
+            <p>We normally respond within 2 business days. Most popular questions will appear on this page.</p>
+          </div>
+                                            <!-- flush -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <!-- 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What payment methods do you accept?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body gray-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu erat mattis lorem, lacinia lacinia dui enim at eros. Pellentesque ut gravida augue. Duis ac dictum tellus.</div>
+                  <div class="accordion-body gray-p">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+                </div>
+              </div>
+              <!-- end 1 -->
+              <!-- 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How long will delivery take?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body gray-p">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim ke ffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</div>
+                  <div class="accordion-body gray-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur sit amet ante nec vulputate. Nulla aliquam, justo auctor consequat tincidunt, arcu erat mattis lorem, lacinia lacinia dui enim at eros. Pellentesque ut gravida augue. Duis ac dictum tellus</div>
+                </div>
+              </div>
+              <!-- end 2 -->
+              <!-- 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Do I need an account to place an order?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body gray-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas expedita, repellendus est nemo cum quibusdam optio, voluptate hic a tempora facere, nihil non itaque alias similique quas quam odit consequatur.</div>
+                </div>
+              </div>
+              <!-- end 3 -->
+              <!-- 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Do you have discounts for returning customers?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body gray-p">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt alqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</div>
+                  <div class="accordion-body gray-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident iure ab nisi, magnam vitae. Laboriosam laborum suscipit recusandae officia laudantium, consectetur adipisci voluptates doloremque quisquam. Id rerum iusto reprehenderit assumenda!</div>
+                </div>
+              </div>
+              <!-- end 4 -->
+              <!-- 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    What are the product refund conditions?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body gray-p">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                    richardson ad squid. 3 wolf moon officia aute. non cupidatat skateboard dolor
+                    brunch. Foosd truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                    sunt alqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. </div>
+                </div>
+              </div>
+              <!-- end 5 -->
+            </div>
+        </div>
+      </div>
+      <!-- END FAQ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Start footer -->
+    <div id="footer"></div>
+    <!-- up -->
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+    <!-- up -->
+    <!-- End footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- swiper js -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      <!-- bootstrap JS -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- JS File -->
+      <script src="js/FAQ.js"></script>
+      <script src="js/header&footer.js"></script>
+    </body>
+</html>
+

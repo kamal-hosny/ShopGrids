@@ -1,0 +1,179 @@
+/* Start Variables */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color-green: green ;
+    --main-color:#2196F3 ;
+    --main-color-alt:#0167f3 ;
+    --main-transition:0.3s;
+    --section-backgroung: #ececec;
+    --color-gray: #888;
+    --color2-gray: #e5e5e5;
+    --color3-gray: #eee;
+    --color4-gray: #dee2e6;
+    --color5-gray: #8a8a8a;
+    --color6-gray: #ccc;
+    --color7-gray: #ffffff62;
+    --color-text: #081828;
+    --bg-color: #fff ;
+    --bg2-color: #f9f9f9 ;
+    --random-color: #2d3a48 ;
+}
+
+/* dark */
+:root{
+}
+
+
+
+
+/* End Variables */
+/* Start Global Rules */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--bg-color) ;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.active{
+    color:var(--main-color-alt) !important;
+}
+/* Start nav */
+.nav{
+    position:relative;
+    top: -150px;
+    padding: 0;
+}
+.nav li a{
+    background-color: var(--main-color);
+}
+/* End nav */
+/* Start Dark mod */
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border: none;
+}
+#dark-mod i{
+    color: var(--color-gray);
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -114px;
+    padding: 0;
+}
+.dropdown .ul-dark a{
+    padding: 10px 15px;
+}
+.dropdown .ul-dark .dark-custom{
+    position: relative; 
+}
+.dropdown .ul-dark .dark-custom:hover .ul-dark-custom{
+    display: flex;
+} 
+.dropdown .ul-dark .dark-custom .ul-dark-custom{
+    position: absolute; 
+    background-color: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    left: -160px;
+    top: 5px;
+    width: 160px;
+    height: 130px;
+    display: none;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li{
+    padding: 15px;
+    height: 30px;
+    width: 30px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    margin: 10px;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(1){
+    background-color: #0167f3;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(2){
+    background-color: #009688;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(3){
+    background-color: #e91e63;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(4){
+    background-color: #ffeb3b;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(5){
+    background-color: #673ab7;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li:nth-child(6){
+    background-color: #795548;
+}
+.dropdown .ul-dark .dark-custom .ul-dark-custom li a{
+
+}
+/* End Dark mod */
+
+/* Start mail */
+.maill-success {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.maill-success .success-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+.maill-success .success-content i{
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #0167f3;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+.maill-success .success-content h2{
+    font-size: 30px;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+.maill-success .success-content p{
+    font-weight: 400;
+    color: var(--color-gray);
+    margin-bottom: 25px;
+}
+.maill-success .success-content .button a{
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 500px;
+    background-color: var(--main-color-alt);
+    transition: var(--main-transition);
+    color: var(--bg-color);
+}
+.maill-success .success-content .button a:hover{
+    background-color: var(--color-text);
+}
+/* End mail */
