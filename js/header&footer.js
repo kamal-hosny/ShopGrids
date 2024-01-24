@@ -227,28 +227,7 @@ generateHeader = () =>{
                   </div>
                 </div>
                 <div class="icons">
-                        <!-- Start dark mod -->
-                        <div class="dropdown">
-                          <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="dark-mod"><i class=" fa-solid fa-circle-half-stroke"></i></span>
-                          </button>
-                          <ul class="dropdown-menu ul-dark">
-                            <li><a class="dropdown-item" href="#" onclick="os()"> <span><i class="fa-solid fa-circle-half-stroke"></i></span> OS Default</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="light()"> <span><i class="fa-solid fa-sun"></i></span> Light</a></li>
-                            <li><a class="dropdown-item" href="#" onclick="dark()"> <span><i class="fa-solid fa-moon"></i></span> Dark</a></li>
-                            <li class="dark-custom"><a class="dropdown-item" href="#" onclick="custom()"> <span><i class="fa-solid fa-gear"></i></span> Custom</a>
-                            <ul class="ul-dark-custom">
-                              <li class="theme-buttons" main-data-color="#2196F3" data-color-alt=" #0167f3" style="background: #0167f3;"><span></span></li>
-                              <li class="theme-buttons" main-data-color="#20958a" data-color-alt=" #009688" style="background: #009688;"><span></span></li>
-                              <li class="theme-buttons" main-data-color="#ec6291" data-color-alt=" #e91e63" style="background: #e91e63;"><span></span></li>
-                              <li class="theme-buttons" main-data-color="#ff764d" data-color-alt=" #ff5722" style="background: #ff5722;"><span></span></li>
-                              <li class="theme-buttons" main-data-color="#8665c0" data-color-alt=" #673ab7" style="background: #673ab7;"><span></span></li>
-                              <li class="theme-buttons" main-data-color="#7a6861" data-color-alt=" #795548" style="background: #795548;"><span></span></li>
-                            </ul>
-                            </li>
-                          </ul>
-                        </div>
-                        <!-- End dark mod -->
+                        
                   <div class="icon0 d-md-none">
                     <i class="fa-solid fa-magnifying-glass "></i>
                   </div>
@@ -374,7 +353,7 @@ generateHeader = () =>{
                           Shop 
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="shop-grid.html">Shop</a></li>
+                          <li><a class="dropdown-item" href="#">Shop</a></li>
                           <li><a class="dropdown-item" href="#">Shop List</a></li>
                           <li><a class="dropdown-item" href="single-product.html">Shop Single</a></li>
                           <li><a class="dropdown-item" href="Cart.html">Cart</a></li>
@@ -423,7 +402,7 @@ generateHeader = () =>{
                         <li class="menu-icon-ul-h-2"><a href="#" class="menu-icon-ul-p-2"><span >Shop   
                           <i class="fa-solid fa-chevron-down"></i>
                           <ul class="menu-icon-ul-c-2">
-                          <li><a href="shop-grid.html">Shop Grid</a></li>
+                          <li><a href="#">Shop Grid</a></li>
                           <li><a href="#">Shop List</a></li>
                           <li><a href="single-product.html">Shop Single</a></li>
                           <li><a href="Cart.html">Cart</a></li>
@@ -487,30 +466,6 @@ menuIcon.addEventListener('click',function(){
   menuIconUL.classList.toggle('menu-icon-ul');
 });
 
-// Start dark mod
-
-let DarkMod = document.getElementById("dark-mod")
-
-console.log(DarkMod)
-
-function os(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-circle-half-stroke"></i>' ;
-}
-function light(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-sun"></i>' ;
-}
-function dark(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-moon"></i>' ;
-}
-function custom(){
-    DarkMod.innerHTML= '<i class="fa-solid fa-gear"></i>' ;
-}
-// End dark mod
-// Start colors
-
-let themeButtons = document.querySelectorAll('.theme-buttons');
-
-
 
 // up
 let span =document.querySelector('.up')
@@ -531,23 +486,3 @@ span.addEventListener('click',function(){
 
 // end up
 
-
-
-
-
-themeButtons.forEach(color =>{
-
-
-    color.addEventListener('click',()=>{
-      localStorage.setItem('data-color-alt',color.getAttribute('data-color-alt'));
-        let dataColorAlt = localStorage.getItem('data-color-alt');
-          document.querySelector(':root').style.setProperty('--main-color-alt', dataColorAlt);
-
-        
-    });
-    color.addEventListener('click',()=>{
-      localStorage.setItem('main-data-color',color.getAttribute('main-data-color'));
-        let dataColorMain = localStorage.getItem('main-data-color');
-        document.querySelector(':root').style.setProperty('--main-color', dataColorMain);
-    });
-});

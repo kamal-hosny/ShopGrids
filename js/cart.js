@@ -117,13 +117,8 @@ let cardItemsData =[{
 ]
 
 
-
-
-
-
-
-
-let total = document.getElementById('total');
+let cartAmount0 = document.getElementById('cartAmount0');
+console.log(cartAmount0)
 let shoppingCart = document.getElementById('shopping-cart');
 console.log(shoppingCart)
 
@@ -134,7 +129,12 @@ let calculation = () =>{
   cartIcon.innerHTML= basket.map((x)=> x.item).reduce((x,y)=> x + y , 0);
 
 }
-calculation();
+
+calculation()
+
+
+
+
 
 let generateCartItems =() =>{
 
@@ -159,7 +159,7 @@ let generateCartItems =() =>{
       </div>
           </div>
         </div>
-        <div  id="total" class="col-lg-2 col-md-2 col-12"><span>$${item * search.price} </span></div>
+        <div  id="cartAmount" class="col-lg-2 col-md-2 col-12"><span>$${item * search.price} </span></div>
         <div class="col-lg-2 col-md-2 col-12"><span>$${price}</span></div>
         <div class="col-lg-1 col-md-2 col-12"><i onclick="removeItem(${id})" class="fa-solid fa-x"></i></div>
         </div>
@@ -214,7 +214,7 @@ let update = (id) => {
 // console.log(search.item);
 document.getElementById(id).innerHTML = search.item ;
 calculation();
-TotalAmout();
+cartAmount();
 };
 
 let removeItem =(id)=>{
@@ -222,10 +222,10 @@ let removeItem =(id)=>{
   // console.log(selectedItem.i);
   basket = basket.filter((x) => x.id  !== selectedItem.id);
   generateCartItems();
-  TotalAmout();
+  cartAmount();
   localStorage.setItem("data", JSON.stringify(basket));
 }
-let TotalAmout = () => {
+let cartAmount = () => {
   if(basket.length !== 0 ){
       let amount = basket.map((x)=>{
           let{ item, id } = x;
@@ -233,10 +233,10 @@ let TotalAmout = () => {
           return item * search.price;
       }).reduce((x,y)=> x+y, 0)
       // console.log(amount)
-      total.innerHTML =`
+      cartAmount1.innerHTML =`
       <span>$${amount}</span>
       `
   }else return;
 
 }
-TotalAmout()
+cartAmount()
